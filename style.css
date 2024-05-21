@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca&display=swap');
+
+body
+{
+    background-color: #0A0C1C;
+    color: white;
+}
+main
+{
+    
+    height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.main-contaner
+{
+    max-width: 1110px;
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius:8px ;
+    
+    background-color:#1B1937 ;
+}
+.contant-l
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 72px;
+    padding-top: 71px;
+    padding-right: 95px;
+   
+    
+}
+.contant-l h2{
+    font-family: "Inter", sans-serif;
+    font-size:36px ;
+    font-weight: 700;
+}
+.contant-l h2 span
+{
+    color: #AB5CDB;
+}
+.discover-contant
+{
+    font-size: 13px;
+    font-family: "Lexend Deca", sans-serif;
+    opacity: 75%;
+}
+.contant-number
+{
+    display: flex;
+    justify-content: space-between;
+  
+}
+.contant-number p
+{
+    font-family: "Inter", sans-serif; 
+    font-size:24px ;
+    font-weight: 700;
+    line-height: 15px;
+}   
+.contant-number p span
+{
+    font-size: 10px;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    opacity: 60%;
+    letter-spacing: 1px;
+}
+.contant-r
+{
+    width: 540px ;
+    background-image: url(images/image-header-desktop.jpg);
+    background-size: cover;
+    height: 420px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    
+}
+.photo
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(171, 92, 219, .5);
+  
+}
+@media (max-width:1000px)
+{
+    main
+    {
+        height: auto;
+    }
+    .main-contaner
+    {
+        width: 327px;
+        height: 780px;
+        flex-wrap: wrap-reverse;
+    }
+    .contant-l h2{
+
+        text-align: center;
+        font-size: 27px;
+        margin-top: 0;
+
+    }
+    .contant-l p {
+        text-align: center;
+    }
+    .contant-r
+    {
+    width: 327px;
+    height: 240px;
+    background-image: url(images/image-header-mobile.jpg);
+    }
+    .contant-number
+    {
+        flex-direction: column;
+       
+    }
+    .contant-number p
+    {
+        font-size: 20px;
+    }
+
+}
+
